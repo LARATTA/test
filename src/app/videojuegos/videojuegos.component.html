@@ -1,0 +1,8 @@
+<h3>Current component of {{ nombre }}</h3>
+<h3 *ngIf="show_old_juego != true"><b>Top Game of the Year: {{ top_juego }}</b></h3>
+<h3 *ngIf="show_old_juego"><b>Old Top Game: {{ old_top_juego }}</b></h3>
+<hr>
+<h4>Videogames list:<h4>
+<ul>
+	<li *ngFor="let game of videojuegos">{{game}}</li>
+</ul>
